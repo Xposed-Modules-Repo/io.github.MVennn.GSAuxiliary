@@ -23,10 +23,6 @@ Make GoldenSun Great Again！
 
 功能以模块 App「功能」页为准。
 
-## 环境要求
-
-安卓 8.1+，以及**较新的 LSPosed**（需要现代 Xposed API 102 与热重载能力）。过旧的 LSPosed 版本、太极 / LSPatch / EdXposed 等其它 Xposed 实现会**静默不加载**（表现为已启用但零日志、零生效）；如何判断框架新旧见 [排错手册](docs/TROUBLESHOOTING.md#8-热重载相关)。
-
 ## 安装
 
 1. [Releases](https://github.com/MVennn/GSAuxiliary/releases/latest) 下载最新版（文件名形如 `GSAuxiliary_*.apk`）并安装
@@ -78,6 +74,7 @@ Make GoldenSun Great Again！
 | [**Jetpack Compose**](https://developer.android.com/jetpack/compose) · [**AndroidX**](https://developer.android.com/jetpack/androidx) | 全部界面实现的基础设施                         |
 | [**Kotlin**](https://github.com/JetBrains/kotlin)                                                                                     | 模块与设置界面的实现语言                        |
 | [**Material Icons**](https://github.com/google/material-design-icons)                                                                 | 界面图标的矢量路径数据来源（按 path 自绘，不引入图标库）     |
+| [**HyperIsland**](https://github.com/1812z/HyperIsland)                                                                               | 关于页的布局与动效来源（MIT，非代码依赖，实现为本项目自写） |
 
 ## 许可证
 
