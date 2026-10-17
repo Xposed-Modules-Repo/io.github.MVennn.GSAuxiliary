@@ -16,27 +16,24 @@ Make GoldenSun Great Again！
 
 ## 这是什么
 
-一个给国信金太阳做界面增强的 LSPosed 模块。
+优化 国信金太阳 的界面显示和页面操作逻辑的 LSPosed 模块。
 
-在已经 root 并装了 LSPosed 的手机上，给金太阳的界面显示和页面操作做些修补 ——  
-有些地方本来要多点一下，有些信息本来要多翻一层。它不碰金太阳的数据，也不碰服务端，  
+不修改金太阳的数据，也不修改服务端数据，  
 所有改动只发生在你自己的手机上。
 
 功能以模块 App「功能」页为准。
 
 ## 安装
 
-1. 到 [Releases](../../releases/latest) 下载最新版（文件名形如 `GSAuxiliary_*.apk`）并安装
+1. [Releases](../../releases/latest) 下载最新版（文件名形如 `GSAuxiliary_*.apk`）并安装
 2. 在 LSPosed 管理器 → 模块里勾选 GSAuxiliary
 3. 作用域中勾上「国信金太阳」（模块已声明默认作用域，一般会自动勾好）
 4. 强制停止国信金太阳，再打开一次
 5. 打开桌面上的 GSAuxiliary（首次打开会先请同意免责声明），进「功能」页挑选要开的开关（开关默认全部关闭；部分开关打开后需重启金太阳生效）
 
-首次启用才需要第 4 步；之后升级模块 APK，框架会自动热重载，无需重启金太阳。
-
 ## 反馈
 
-遇到问题、想要新功能，或者金太阳升级之后某个开关失灵了，都可以到 [Issues](https://github.com/MVennn/GSAuxiliary/issues) 进行反馈。
+遇到问题、想要新功能，或者金太阳升级之后某个开关失灵，都可以到 [Issues](https://github.com/MVennn/GSAuxiliary/issues) 进行反馈。
 
 请上传相关信息与日志。相关信息主要包括：
 
@@ -44,7 +41,9 @@ Make GoldenSun Great Again！
 - 模块版本号、安卓版本、机型
 - 出问题的开关，以及复现步骤
 - 日志（模块在日志里的标记名是 `GSZXEnhance`，与模块名不同，照抄即可）：
-  - 用 adb 抓 LSPosed 日志（**目标进程的日志在这里**）：     
+  - **最省事**：模块设置页 → 日志 → 导出日志，一键导出两个进程的日志（txt），直接把这
+    个文件发过来即可。想更详细，先把「日志等级」调成**调试**，复现一次再导出
+  - 也可以用 adb 抓 LSPosed 日志（**目标进程的日志在这里**）：     
     `adb shell su -c "grep GSZXEnhance /data/adb/lspd/log/modules_*.log | tail -50"`
   - 模块 App 自己进程的日志在 logcat 里：`adb logcat -s GSZXEnhance`
 
