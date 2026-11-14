@@ -35,12 +35,12 @@ Make GoldenSun Great Again！
 | 策略页 | 增加 截图并添加 按钮 | 多选态底栏「确认添加」左边加一颗：打开一次真实详情页逐只截图存相册，再自动替你点宿主「确认添加」 |
 | 策略页 | 增加 筛选股票 菜单项 | 右上角三点菜单里加筛选面板，筛选条件可按策略分别保存 |
 | 智能选股 | 我的策略聚合 | 几条自建策略并成一张原生结果页，入口卡挂在策略列表上，成员与上限在「聚合组设置」里调 |
-| 股票详情页 | 增加 智能盯盘 入口 | 详情页底栏「自选」与「更多」之间加一格，直接进盯盘页 |
+| 股票详情页 | 自定义 详情页底栏 入口 | 把「更多」面板里的项（条件单 / 智能盯盘 / 智能K线 / 产业链 / 区间统计 / 交易明细 / 股票PK）提到详情页底栏，最多两项 |
 | 智能盯盘 | 增加 配置 按钮 | 盯盘价格页（H5）「保存」右边加「配置」，按方案算好涨到 / 跌到填进去，再替你点一次宿主「保存」 |
 | 智能盯盘 | 优化确定逻辑 | 涨到、跌到都空着也能保存（等于撤掉这条盯盘） |
 | 智能盯盘 | 无需确定保存盯盘 | 保存后只弹一条轻提示并自动返回，返回位置可设 |
 | 智能盯盘 | 盯盘数据卡片拓展 | 点盯盘数据卡片直接跳个股详情页 |
-| 底栏 | 隐藏 理财 入口 | 主界面底栏去掉「理财」入口 |
+| 底栏 | 自定义 底栏 入口 | 底栏六格逐格隐藏（首页 / 行情 / 自选 / 交易 / 理财 / 账户），至少留一格 |
 | 首页 | 隐藏 横幅 | 收起首页快捷入口下方那条横幅 |
 | 行情市场 | 隐藏 滚动横幅与快捷入口 | 市场概览下面那条滚动横幅与它下面那排快捷入口一起收起 |
 | 行情市场 | 板块显示单行 | 板块区压成一行，整块变矮 |
@@ -92,7 +92,7 @@ Make GoldenSun Great Again！
 - [扩展指南](https://github.com/MVennn/GSAuxiliary/blob/main/docs/EXTENDING.md)：加一个新功能要做哪几步、合入前自检什么
 - [构建](https://github.com/MVennn/GSAuxiliary/blob/main/docs/BUILD.md) · [版本规范](https://github.com/MVennn/GSAuxiliary/blob/main/docs/VERSIONING.md) · [发布清单](https://github.com/MVennn/GSAuxiliary/blob/main/docs/RELEASE.md)：从改代码到出 Release
 - [排错手册](https://github.com/MVennn/GSAuxiliary/blob/main/docs/TROUBLESHOOTING.md)：按「现象 → 步骤 → 原因 / 解法」组织；装不上、开关点了没反应、热重载失灵先看它
-- 功能专项 14 篇 `FEATURE-*.md`（见 [docs/](https://github.com/MVennn/GSAuxiliary/blob/main/docs/)）：一个功能一篇，写目标、真机实测的链路契约与实现要点
+- 功能专项 15 篇 `FEATURE-*.md`（见 [docs/](https://github.com/MVennn/GSAuxiliary/blob/main/docs/)）：一个功能一篇，写目标、真机实测的链路契约与实现要点
 - [更新日志](https://github.com/MVennn/GSAuxiliary/blob/main/CHANGELOG.md)：每个版本改了什么、为什么改
 
 ## 免责声明
